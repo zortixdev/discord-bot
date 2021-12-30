@@ -50,4 +50,4 @@ process.on('unhandledRejection', err => {
 
 
 //LOG IN DISCORD
-client.login(config.token).catch(e => client.logger.error(e.message));
+client.login(process.env.TOKEN).catch(e => client.logger.error(e.message));
